@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<link text="timhradil@gmail.com" url="mailto:timhradil@gmail.com" /><link text="timhradil@gmail.com" url="mailto:timhradil@gmail.com" /><
+?xml version="1.0" encoding="UTF-8"?>
 <settings
 
 nameText="Tim Hradil"
@@ -35,5 +36,7 @@ siteRotation="0"
 >
 
 <link text="timhradil@gmail.com" url="mailto:timhradil@gmail.com" />
+<link text="View my Resume" url="https://drive.google.com/open?id=1AtLvvvMCQqTm5UuvrM4XyqqDWAlvwYuWZIJYxL5Jq9c" />
+<link text="Visit my linked in" url="https://www.linkedin.com/in/timothy-hradil-840246191/" />
 	
 </settings>
