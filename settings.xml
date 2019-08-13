@@ -6,7 +6,7 @@ nameText="Tim Hradil"
 taglineText="Student + Programmer"
 mainText="SITE COMING SOON..."
 
-useOwnLogo="false"
+useOwnLogo="true"
 logoFilePath="logo.png"
 
 nameColor="0xffffff"
