@@ -79,7 +79,6 @@ body, html {
 </head>
 
 <body>
-  <div class="bg"></div>
 
   <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -91,8 +90,10 @@ body, html {
   </div>
   </div>  
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  
+  <div class="bg">
+    <span style="font-size:30px;cursor:pointer;position:center" onclick="openNav()">&#9776;</span>
+  </div>
+    
   <script>
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
