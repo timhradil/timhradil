@@ -20,12 +20,12 @@ body, html {
 }
   
 .carousel-inner > .item > img{
-	height: 100vh;
+	max-height: 100vh;
 	max-width: 100%;
 	position: center;
 	margin: auto;
 }
-  
+	
 .bg {
   height: 100%;
   background-image: url('beach filter.png');
@@ -103,7 +103,7 @@ body, html {
   
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators" style="z-index:0;">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
       </ol>
