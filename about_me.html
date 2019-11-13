@@ -16,8 +16,10 @@ body, html {
 }
   
 .bg {
-
-  height: 100%;
+  overflow: hidden;
+  clip:auto;
+  height: 100vh;
+  width: 100vw;
 
   background-image: url('beach filter.png');
   
@@ -25,7 +27,6 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   
-  overflow:hidden;
   text-align: center;
 }
 
@@ -85,7 +86,7 @@ body, html {
 
 <body>
 
-  <div id="myNav" class="overlay">
+  <div id="myNav" class="overlay" style="height: 0%;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <div class="overlay-content">
     <a href="about_me.html">About Me</a>
@@ -98,7 +99,7 @@ body, html {
   
   <div class="bg">
     <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;left:50%;margin-right: -50%;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
-    <img src="about_me_image_transparent.png" style="max-height:100vh;max-width:100vmax;position:fixed;transform: translate(50%,-50%);top:50%;right:50%;overflow:hidden;">
+    <img src="about_me_image_transparent.png" style="max-height:100vh;max-width:100vmax;position:relative;transform:translate(-50vmax,-50vh);left:50vw;top:50vh">
   </div>
     
   <script>
@@ -112,6 +113,7 @@ body, html {
     
 </script>
   
+
 
 
 
