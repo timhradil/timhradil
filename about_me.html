@@ -1,11 +1,9 @@
 
 <!DOCTYPE HTML>
 
-<html>
+<html><head>
 
-<head>
-
-<link rel="shortcut icon" type="image/x-icon" href="icon_CcH_icon.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="icon_CcH_icon.ico">
   
   <title>Tim Hradil</title>
   
@@ -87,7 +85,7 @@ body, html {
 <body>
 
   <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <div class="overlay-content">
     <a href="about_me.html">About Me</a>
     <a href="Timothy Hradil Resume.pdf" target="_blank">Resume</a>
@@ -98,8 +96,8 @@ body, html {
   </div>  
   
   <div class="bg">
-    <span style="font-size:calc(40px + 1vmax);cursor:pointer;text-align:center;color:white" onclick="openNav()">&#9776;</span>
-    <img source="about_me_image_transparent.png" style="height:100vh;width:100vw;">
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:2;left:50%;margin-right: -50%;transform: translate(-50%, 0);" onclick="openNav()">☰</span>
+    <img style="height:100vh;width:100vw;z-index:2;position:relative;" src="about_me_image_transparent.png">
   </div>
     
   <script>
@@ -113,6 +111,7 @@ body, html {
     
 </script>
   
-</body>
 
-</html>
+
+
+</body></html>
