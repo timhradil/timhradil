@@ -25,9 +25,16 @@ body, html {
 	top:-20px;
 	position: relative;
 }
+
+.text-box-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
   
 .text-box-wrapper{
 	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
     top: calc(60px + 1vmax);
     height:calc(100vh - 60px - 1vmax);
     width:100%;
@@ -132,14 +139,5 @@ body, html {
   }
     
 </script>
-  
-
-
-
-
-
-
-
-
 
 </body></html>
