@@ -21,6 +21,14 @@ body, html {
 	position:relative;
 }
   
+.text-box-wrapper{
+	overflow: hidden;
+    top: 20vh;
+    height:calc(100vh - 10px);
+    width:100%;
+    margin-bottom:10px;
+}
+
 .bg {
   
   height: 100%;
@@ -103,8 +111,10 @@ body, html {
     <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
   </div>
   
-  <div class="text-box"></div>
-  
+  <div class="text-box-wrapper">
+  	<div class="text-box"></div>
+  </div>
+      
   <script>
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
