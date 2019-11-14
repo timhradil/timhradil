@@ -17,16 +17,17 @@ body, html {
     margin:10px;
     height:1000px;
     background: rgba(255,255,255,0.9);
-	top:20vh;
+	top:0;
 	position:relative;
 }
   
 .text-box-wrapper{
 	overflow: hidden;
-    top: 20vh;
-    height:calc(100vh - 10px);
+    top: calc(50px + 1vmax);
+    height:calc(100vh - 60px - 1vmax);
     width:100%;
     margin-bottom:10px;
+	position:absolute;
 }
 
 .bg {
@@ -108,7 +109,7 @@ body, html {
   </div>  
   
   <div class="bg">
-    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
   </div>
   
   <div class="text-box-wrapper">
