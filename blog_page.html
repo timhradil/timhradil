@@ -14,6 +14,17 @@ body, html {
   margin: 0;
 }
 
+.header {
+  height: 10vh;
+  overflow: hidden;
+  background-image: url('beach filter.png');
+  
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: calc((1920/1080)*100vh), 100vh;
+  
+}
+
 .overlay {
   height: 0;
   width: 100%;
@@ -76,9 +87,9 @@ body, html {
   </div>
   </div>  
   
-  <div>
+  <div class="header">
     <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;left:50%;margin-right: -50%;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
-    <img src="beach filter.png" style="height:10vh;width:100%;position:relative;top:0">
+    
   </div>
     
   <script>
@@ -91,6 +102,7 @@ body, html {
     
 </script>
   
+
 
 
 
