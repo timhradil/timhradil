@@ -14,17 +14,26 @@ body, html {
   margin: 0;
 }
 
-.header {
-  height: 10vh;
-  overflow: hidden;
-  background-image: url('beach filter.png');
-  
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: calc((1920/1080)*100vh), 100vh;
+.text-box {
+    width:100%;
+    margin:10px;
+    height:1000px;
+    background: rgba(255,255,255,0.9);
   
 }
-
+  
+.bg {
+  overflow: hidden;
+  clip:auto;
+  height: 100%;
+  background-image: url('beach filter.png');
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  text-align: center;
+}
 .overlay {
   height: 0;
   width: 100%;
@@ -87,9 +96,9 @@ body, html {
   </div>
   </div>  
   
-  <div class="header">
-    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;left:50%;margin-right: -50%;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
-    
+  <div class="bg">
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:sticky;z-index:1;left:50%;margin-right:-50%;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
+    <div class="text-box"></div>
   </div>
     
   <script>
