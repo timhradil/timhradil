@@ -95,7 +95,6 @@ body {
 /* Tooltip */
 .tooltip-content {
   max-height: 20vh;
-  overflow: auto;
   position: relative;
   width: 15vmax;
   left: -6.9vmax;
@@ -160,14 +159,16 @@ body {
 
 
 /* Tooltip content*/
-
+  
 .tooltip-text {
-  font-size: 1em;
-  line-height: 1.35;
+  max-height: 7vh;
+  overflow: auto;
+  font-size: 1vmax;
+  line-height: 1.25vmax;
   display: block;
   font-family: 'Open Sans';
   text-align: center;
-  padding: 1.31em 1.21em 1.21em 0;
+  padding: 1.5vmax;
   color: #fff;
   position: relative !important;
 }
