@@ -69,6 +69,9 @@ body {
   display: block;
   position: absolute;
   z-index: 0;
+}
+
+.tooltip a {
   padding: 12px;
 }
 
@@ -88,6 +91,10 @@ body {
 }
 
 .tooltip:hover .tooltip-item::after {
+  pointer-events: auto;
+}
+
+.tooltip:click .tooltip-item::after {
   pointer-events: auto;
 }
 
