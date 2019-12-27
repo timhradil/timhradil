@@ -128,7 +128,17 @@ left: -28%;
 .tooltip:hover {
   z-index: 9999;
 }
+  
+.tooltip:click .tooltip-content {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+}
 
+.tooltip:click {
+  z-index: 9999;
+}
 
 /* Arrow */
 
