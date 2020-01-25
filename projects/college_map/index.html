@@ -1,1 +1,153 @@
+<html><head>
 
+<link rel="shortcut icon" type="image/x-icon" href="icon_CcH_icon.ico">
+  
+  <title>Tim Hradil</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<base href="https://timhradil.com/">
+	
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.text-box {
+    max-width:100%;
+    margin-left:calc(60px + 1vmax);
+    margin-right:calc(60px + 1vmax);
+    margin-bottom:calc(30px + 1vmax);	
+
+    height:100%px;
+    background: rgba(255,255,255,0.9);
+    top:-21px;
+    position: relative;
+    overflow: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+	
+}
+
+.text-box-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+  
+.text-box-wrapper{
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+    top: calc(60px + 1vmax);
+    height:calc(100vh - 60px - 1vmax);
+    width:100%;
+    margin-bottom:10px;
+	position:fixed;
+}
+
+.bg {
+  
+  height: 100%;
+  width: 100vw;
+  background-image: url('beach filter.png');
+  
+  top:0;
+	
+  position:fixed;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  text-align: center;
+}
+.overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+  
+</style>
+
+</head>
+
+<body>
+
+  <div id="myNav" class="overlay" style="height: 0%;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <div class="overlay-content">
+    <a href="about-me">About Me</a>
+    <a href="Timothy Hradil Resume.pdf" target="_blank">Resume</a>
+    <a href="work-in-progress">Projects</a>
+    <a href="work-in-progress">Blog</a>
+    <a href="contact-me">Contact Me</a>
+  </div>
+  </div>  
+  
+  <div class="bg">
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
+  </div>
+  
+  <div class="text-box-wrapper">
+  	<div class="text-box">
+    <h1 style="text-align:center; padding-top:2.5%;">College Map</h1>
+    <p style="margin: 2.5%; margin-bottom:0%;">This map is in pure CSS. It has some of my friends from Calc 3 on it and the schools they are going to.</p>
+    <iframe style="padding: 25%;" height="95%" width="95%" src="https://repl.it/@TimHradil/College-Map?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+  </div>
+      
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+    
+</script>
+
+
+
+
+
+</body></html>
