@@ -53,7 +53,7 @@ body, html {
   display: block;
   transition: 0.3s;
 }
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus, .dropdown-content a:hover, .dropbtn:hover {
   color: #f1f1f1;
 }
 .overlay .closebtn {
@@ -62,6 +62,38 @@ body, html {
   right: 45px;
   font-size: 60px;
 }
+  
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
