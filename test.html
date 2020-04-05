@@ -164,17 +164,13 @@ body, html {
       return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     }
     
-    function onOpen(){
-      alert("opened nav")
-      if (isMobileDevice()){
-        document.getElementById("dc").style.visibility = "visible";
-        document.getElementById("dc").style.height = "60px";
-        document.getElementById("dc").style.transform = "translateY(0%)";
-        document.getElementById("dc").style.opacity = "1";    
-        //document.getElementById("dc").style.z-index = "3";
-      }
+    if (isMobileDevice()){
+      document.getElementById("dc").style.visibility = "visible";
+      document.getElementById("dc").style.height = "60px";
+      document.getElementById("dc").style.transform = "translateY(0%)";
+      document.getElementById("dc").style.opacity = "1";    
     }
-    closeNav();
+    //closeNav();
   </script>
   
 
