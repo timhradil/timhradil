@@ -135,7 +135,7 @@ body, html {
   <div class="overlay-content">
     <div class="dropdown">
       <a href="about-me" class="dropbtn">About Me</a>
-      <div class="dropdown-content" id="d-c">
+      <div id="dc" class="dropdown-content">
         <a href="#">Artwork</a>
         <a href="#">Personal Blog</a>
       </div>
@@ -167,13 +167,14 @@ body, html {
     function onOpen(){
       alert("opened nav")
       /*if (isMobileDevice()){
-        document.getElementById("d-c").style.visibility = "visible";
-        document.getElementById("d-c").style.height = "60px";
-        document.getElementById("d-c").style.transform = "translateY(0%)";
-        document.getElementById("d-c").style.opacity = "1";    
-        document.getElementById("d-c").style.z-index = "3";
+        document.getElementById("dc").style.visibility = "visible";
+        document.getElementById("dc").style.height = "60px";
+        document.getElementById("dc").style.transform = "translateY(0%)";
+        document.getElementById("dc").style.opacity = "1";    
+        document.getElementById("dc").style.z-index = "3";
       }*/
     }
+    closeNav();
   </script>
   
 
