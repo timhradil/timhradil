@@ -160,12 +160,16 @@ body, html {
     document.getElementById("myNav").style.height = "0%";
   }
   
-  if (navigator.userAgent.indexOf('Mobile') !== -1){
-    document.getElementById("d-c").style.visibility = visible;
-    document.getElementById("d-c").style.height = 60px;
-    document.getElementById("d-c").style.transform = translateY(0%);
-    document.getElementByID("d-c").style.opacity = 1;    
-    document.getElementById("d-c").style.z-index = 3;
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
+  if (isMobileDevice()){
+    alert("hi");
+    //document.getElementById("d-c").style.visibility = visible;
+    //document.getElementById("d-c").style.height = 60px;
+    //document.getElementById("d-c").style.transform = translateY(0%);
+    //document.getElementByID("d-c").style.opacity = 1;    
+    //document.getElementById("d-c").style.z-index = 3;
   }
 </script>
   
