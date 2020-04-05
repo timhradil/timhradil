@@ -26,7 +26,7 @@ body, html {
   text-align: center;
 }
 .overlay {
-  height: 0;
+  height: 0px;
   width: 100%;
   position: absolute;
   z-index: 2;
@@ -164,12 +164,11 @@ body, html {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   };
   if (isMobileDevice()){
-    alert("hi");
-    //document.getElementById("d-c").style.visibility = visible;
-    //document.getElementById("d-c").style.height = 60px;
-    //document.getElementById("d-c").style.transform = translateY(0%);
-    //document.getElementByID("d-c").style.opacity = 1;    
-    //document.getElementById("d-c").style.z-index = 3;
+    document.getElementById("d-c").style.visibility = visible;
+    document.getElementById("d-c").style.height = 60px;
+    document.getElementById("d-c").style.transform = translateY(0%);
+    document.getElementByID("d-c").style.opacity = 1;    
+    document.getElementById("d-c").style.z-index = 3;
   }
 </script>
   
