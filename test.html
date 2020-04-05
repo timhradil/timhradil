@@ -135,7 +135,7 @@ body, html {
   <div class="overlay-content">
     <div class="dropdown">
       <a href="about-me" class="dropbtn">About Me</a>
-      <div class="dropdown-content">
+      <div class="dropdown-content" id="d-c">
         <a href="#">Artwork</a>
         <a href="#">Personal Blog</a>
       </div>
@@ -159,7 +159,14 @@ body, html {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-    
+  
+  if (navigator.userAgent.indexOf('Mobile') !== -1){
+    document.getElementById("d-c").style.visibility = visible;
+    document.getElementById("d-c").style.height = 60px;
+    document.getElementById("d-c").style.transform = translateY(0%);
+    document.getElementByID("d-c").style.opacity = 1;    
+    document.getElementById("d-c").style.z-index = 3;
+  }
 </script>
   
 
