@@ -32,7 +32,7 @@ body, html {
 }
 
 .overlay {
-  height: 0;
+  height: 0px;
   width: 100%;
   position: absolute;
   z-index: 2;
@@ -43,7 +43,6 @@ body, html {
   overflow-x: hidden;
   transition: 0.5s;
 }
-
 .overlay-content {
   position: relative;
   top: 25%;
@@ -51,7 +50,6 @@ body, html {
   text-align: center;
   margin-top: 30px;
 }
-
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -60,16 +58,66 @@ body, html {
   display: block;
   transition: 0.3s;
 }
-
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus, .dropdown-content a:hover, .dropdown .dropbtn:hover {
   color: #f1f1f1;
 }
-
 .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+  
+.dropdown {
+  position: relative;
+  background-color: inherit;
+}
+
+.dropdown .dropbtn {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+  
+.dropdown-content {
+  visibility: hidden;
+  height:0;
+  position: relative;
+  background-color: inherit;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  opacity: 0;
+  transform: translateY(-2em);
+}
+
+.dropdown-content a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: inherit;
+  background-color: inherit;
+}
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  height: 60px;
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; 
 }
 
 @media screen and (max-height: 450px) {
@@ -90,7 +138,13 @@ body, html {
   <div id="myNav" class="overlay" style="height: 0%;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <div class="overlay-content">
-    <a href="about-me">About Me</a>
+    <div class="dropdown">
+      <a href="about-me" class="dropbtn">About Me</a>
+      <div id="dc" class="dropdown-content">
+        <a href="about-me/artwork">Artwork</a>
+        <a href="work-in-progress">Personal Blog</a>
+      </div>
+    </div>
     <a href="Timothy Hradil Resume.pdf" target="_blank">Resume</a>
     <a href="projects">Projects</a>
     <a href="work-in-progress">Blog</a>
