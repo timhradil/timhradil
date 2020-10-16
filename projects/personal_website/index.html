@@ -1,0 +1,224 @@
+<html><head>
+
+<link rel="shortcut icon" type="image/x-icon" href="icon_CcH_icon.ico">
+  
+  <title>Tim Hradil</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<base href="https://timhradil.com/">
+	
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.text-box {
+    max-width:100%;
+    margin-left:calc(60px + 1vmax);
+    margin-right:calc(60px + 1vmax);
+    margin-bottom:calc(30px + 1vmax);	
+
+    height:100%px;
+    background: rgba(255,255,255,0.9);
+    top:-21px;
+    position: relative;
+    overflow: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+	
+}
+
+.text-box-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+  
+.text-box-wrapper{
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+    top: calc(60px + 1vmax);
+    height:calc(100vh - 60px - 1vmax);
+    width:100%;
+    margin-bottom:10px;
+	position:fixed;
+}
+
+.bg {
+  
+  height: 100%;
+  width: 100vw;
+  background-image: url('beach filter.png');
+  
+  top:0;
+	
+  position:fixed;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  text-align: center;
+}
+.overlay {
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus, .dropdown-content a:hover, .dropdown .dropbtn:hover {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+  
+.dropdown {
+  position: relative;
+  background-color: inherit;
+}
+
+.dropdown .dropbtn {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+  
+.dropdown-content {
+  visibility: hidden;
+  height:0;
+  position: relative;
+  background-color: inherit;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  opacity: 0;
+  transform: translateY(-2em);
+}
+
+.dropdown-content a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: inherit;
+  background-color: inherit;
+}
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  height: 60px;
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; 
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+  
+</style>
+
+</head>
+
+<body>
+
+  <div id="myNav" class="overlay" style="height: 0%;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <div class="overlay-content">
+    <div class="dropdown">
+      <a href="about-me" class="dropbtn">About Me</a>
+      <div id="dc" class="dropdown-content">
+        <a href="about-me/artwork">Artwork</a>
+        <a href="work-in-progress">Personal Blog</a>
+      </div>
+    </div>
+    <a href="Timothy Hradil Resume.pdf" target="_blank">Resume</a>
+    <a href="projects">Projects</a>
+    <a href="work-in-progress">Blog</a>
+    <a href="contact-me">Contact Me</a>
+  </div>
+  </div>  
+  
+  <div class="bg">
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
+  </div>
+  
+  <div class="text-box-wrapper">
+  	<div class="text-box">
+    <h1 style="text-align:center; padding-top:2.5%;">Personal Website</h1>
+    <p style="margin: 2.5%; margin-bottom:0%;">Yes this is the website you are currently on: explore it. All source code is available on github <a href="https://github.com/timhradil/timhradil" target="_blank">here</a>.</p>
+</div>
+  </div>
+      
+  <script>
+  function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+      onOpen();
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+    
+    if (isMobileDevice()){
+      document.getElementById("dc").style.visibility = "visible";
+      document.getElementById("dc").style.height = "60px";
+      document.getElementById("dc").style.transform = "translateY(0%)";
+      document.getElementById("dc").style.opacity = "1";    
+    }
+    closeNav();
+    
+</script>
+
+
+
+
+
+</body></html>
