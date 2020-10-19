@@ -1,0 +1,233 @@
+<html><head>
+
+<link rel="shortcut icon" type="image/x-icon" href="icon_CcH_icon.ico">
+  
+  <title>Tim Hradil</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<base href="https://timhradil.com/">
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.text-box {
+    max-width:100%;
+    margin-left:calc(60px + 1vmax);
+    margin-right:calc(60px + 1vmax);
+    margin-bottom:calc(30px + 1vmax);	
+
+    height:100%px;
+    background: rgba(255,255,255,0.9);
+    top:-21px;
+    position: relative;
+    overflow: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+	
+}
+
+.text-box-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+  
+.text-box-wrapper{
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+    top: calc(60px + 1vmax);
+    height:calc(100vh - 60px - 1vmax);
+    width:100%;
+    margin-bottom:10px;
+	position:fixed;
+}
+
+.bg {
+  
+  height: 100%;
+  width: 100vw;
+  background-image: url('beach filter.png');
+  
+  top:0;
+	
+  position:fixed;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  text-align: center;
+}
+.overlay {
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus, .dropdown-content a:hover, .dropdown .dropbtn:hover {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+  
+.dropdown {
+  position: relative;
+  background-color: inherit;
+}
+
+.dropdown .dropbtn {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+  
+.dropdown-content {
+  visibility: hidden;
+  height:0;
+  position: relative;
+  background-color: inherit;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  opacity: 0;
+  transform: translateY(-2em);
+}
+
+.dropdown-content a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: inherit;
+  background-color: inherit;
+}
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  height: 60px;
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; 
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+  
+</style>
+
+</head>
+
+<body>
+
+  <div id="myNav" class="overlay" style="height: 0%;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <div class="overlay-content">
+    <div class="dropdown">
+      <a href="about-me" class="dropbtn">About Me</a>
+      <div id="dc" class="dropdown-content">
+        <a href="about-me/artwork">Artwork</a>
+        <a href="work-in-progress">Personal Blog</a>
+      </div>
+    </div>
+    <a href="Timothy Hradil Resume.pdf" target="_blank">Resume</a>
+    <a href="projects">Projects</a>
+    <a href="blog">Blog</a>
+    <a href="contact-me">Contact Me</a>
+  </div>
+  </div>  
+  
+  <div class="bg">
+    <span style="font-size:calc(40px + 1vmax);cursor:pointer;color:white;position:absolute;z-index:1;transform: translate(-50%, 0);top:0px;" onclick="openNav()">☰</span>
+  </div>
+  
+  <div class="text-box-wrapper">
+  	<div class="text-box">
+    <h3 style="padding-top:2.5%">The following comes from my critical thinking and writing 1 course.</h3>
+    <h1 style="margin: 2.5%; text-align:center; padding-bottom:0%">In Defense of the Core Curriculum</h1>
+    <p style="margin: 2.5%; padding-bottom:0%">Santa Clara University requires all students to complete a breadth of courses split into three sections: foundations, explorations, and integrations. These classes include curricula on culture, writing, arts, and diversity. As an incoming first-year computer science and engineering major, I did not see the value of these courses. This thought came from a talk with a fellow Santa Clara University student, a third-year marketing major. He described to me how he was taking his first major specific course after two full years of Core Curriculum and core business courses. The idea that he was meant to spend only half of his college career (assuming he graduates in four years) on his future job was baffling to me. I found this idea in my fellow engineering classmates where it was commonplace to complain how the Core Curriculum was taking away from our much harder engineering courses. The administration believes these core courses hold a necessity for education; however, we did not see the value of these courses. It was only after reading a few texts for Critical Thinking and Writing 1, a Core Curriculum class, that I realized the stasis of this conflict lied in the aims of education. In analysing the goals of each side, it is clear that the administration's Core Curriculum equips students with intangible skills not found in their major specific curriculum.</p>
+    <p style="margin: 2.5%; padding-bottom:0%">I believe my first reaction when I saw the magnitude of the Core Curriculum was “wow that’s a lot, why?” I, like many of my fellow students, did not understand why we had to take courses beyond those for our major. I thought, like how universities work in Europe, prioritizing my major focused classes allows for the ability to graduate earlier. This flavor of education is what W.E.B. Du Bois, an influential black essayist, called training. In his essay, “Of the Training of Black Men”, Du Bois lays out the contrast between training and broader education. Training, he describes, is only useful for what is being taught: “Training for life teaches living; but what training for the profitable living together of black men and white?” (Du Bois, 311). Du Bois suggests that “training” is limited and asks how will we train for things we do not know? He goes on to answer this question saying colleges must “develop men … that seeks a freedom for expansion and self-development” (Du Bois, 316). Du Bois concludes that teaching “for life” is less valuable than developing a lust for “self-development”. In a constantly changing world, the most up to date teachings will become old with one's lifetime, thus training by definition immediately depreciates. However, a lust for “self-development”, for knowledge, will always be valued. This divide that Du Bois paints parallels the divide between the ideology of the students and that of the administration. The students' ideals embody what Du Bois calls training while the principles of the administration embody what Du Bois calls development. At this point, I understood the administration's reasoning behind the Core Curriculum, for it was the same reasoning Du Bois employs in “On the Training of Black Men”; however, I still wondered how it applied to me. Du Bois’ flowery language and long-winded analogies felt distant to me: the ideals of Du Bois felt too philosophical. Even with an understanding of the aims of the Core Curriculum, I needed practical reasoning to appreciate its value to education.</p>
+    <p style="margin: 2.5%; padding-bottom:0%">Du Bois explains that a general education creates a better person, but does it make a better engineer, scientist, or doctor who necesitate highly specialized training? Perhaps the best approach is to look to an anecdote: Atul Gawande. Gawande is a world renowned surgeon and professor as well as an essayist on teaching and learning. In his essay “Slow Ideas” Gawande discusses what makes some ideas spread faster than others. He uses anesthesia and sepsis as examples of fast and slow ideas respectively. These two ideas had nearly identical technical difficulties and economic advantages, so why did one spread quickly and the other slowly? Gawande’s reasoning claims “one combatted a visible and immediate problem (pain); the other combatted an invisible problem (germs)” (Gawande, 364). He argues that anesthesia made the doctor’s job easier while aseptic techniques applied a burden on the surgeon. This plays to the notion that humans are inherently narcissistic, but what does this explain about learning? Gawande believes that learning must be made personable: people will not put ideas into action when they do not believe it is beneficial to do so, even when evidence suggests otherwise. He supports this claim by detailing his program to implement old “slow” ideas about childbirth in rural India. What he is attempting to do is change social norms: the unwritten rules of behavior that society considers acceptable. To do this he says “you have to understand people’s existing norms and barriers to change.” (Gawande, 369-370). Gawande, a surgeon, now plays the role of a sociologist in a country he knows nothing about. The broad education that Du Bois champions allowed him to analyze the behavioral norms of people: topics not included in training specific to surgeons. But did Gawande know that his general education would one day help him put into action the ideas he found in studying surgery? I doubt it, personally I do not see how studying Islam’s interactions with Europe, the topic of my Culture and Ideas course, will help me develop software.</p>
+    <p style="margin: 2.5%; padding-bottom:0%">Even with an understanding of the aims of the Core Curriculum and an example of its value to a person like myself, in Gawande, I still doubted its worth, but perhaps it was my intellectual narcissism that created this doubt. Santa Clara University’s Core Curriculum is comparable to, as Gawande describes it, aseptic techniques: an immediate burden with no immediate reward. Luckily, Gawande gives a framework for how to deal with these “unsexy” ideas: “The key message to teach surgeons, it turned out, was not how to stop germs but how to think like a laboratory scientist.”(Gawande, 376). Gawande describes how surgeons must see themselves as “laboratory scientists'' to solve the problem of sepsis, likewise in his BetterBirth project, the nurses Gawande employed had to think of themselves as mentors. Gawande himself follows this pattern: a surgeon turned sociologist to spread life saving ideas. Maybe the problem then is my assumption of what an engineer is. No, Gawande was a surgeon, but also more. Once I realized that my education was about more than just engineering I saw the value of the Core Curriculum. The Core Curriculum allowed for the and: Gawande was an engineer and a sociologist. That and is what Du Bois valued in a broad education. That and is what separates training from education.</p>
+    <p style="margin: 2.5%; padding-bottom:0%">It has been ingrained in our minds that to belong to a specific profession, one must exclusively focus on that narrowed education. This was my belief, and it is for many others: of course, one with this belief views the Core Curriculum as worthless. To this group, the aims of education were solely to make them engineers. In contrast, the aims of education of the administration were to develop a person trained in engineering. While Du Bois introduces this divide, Gawande shows the worth of educating the whole person. The fact of the matter is that it is more valuable to be a person trained in engineering than to be solely an engineer. </p>
+    <p style="margin: 2.5%; padding-bottom:0%; text-align:center">Works Cited</p>
+    <p style="margin: 2.5%; padding-bottom:2.5%">Bartholomae, David, et al. Ways of Reading: An Anthology for Writers. 11th ed., Bedford/St. Martin's, 2016. </p>
+   </div>
+  </div>
+      
+  <script>
+  function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+      onOpen();
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    }
+    
+    if (isMobileDevice()){
+      document.getElementById("dc").style.visibility = "visible";
+      document.getElementById("dc").style.height = "60px";
+      document.getElementById("dc").style.transform = "translateY(0%)";
+      document.getElementById("dc").style.opacity = "1";    
+    }
+    closeNav();
+    
+</script>
+
+
+
+
+
+</body></html>
