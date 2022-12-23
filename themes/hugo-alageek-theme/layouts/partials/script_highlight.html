@@ -1,0 +1,11 @@
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
+
+{{ range .Site.Params.highlightjslanguages }}
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/{{.}}.min.js" defer></script>
+{{ end }}
+
+<script>
+window.addEventListener('load', function() {
+  hljs.highlightAll();
+}, true);
+</script>

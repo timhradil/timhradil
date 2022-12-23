@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="main">
+  <div class="container">
+   <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+    <div class="mx-0 mx-md-4">
+      <h1>Artwork</h1>
+      <p></p>
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        {{- $images := .Resources.ByType "image" -}}
+        {{ range $images }}
+        <div class="col-6 col-md-4 col-xl-3 pb-3 px-2">
+          <img src="{{ .RelPermalink }}" height="{{ .Height }}" width="{{ .Width }}" alt="Gallery Image" class="img-fluid">
+        </div>
+        {{ end }}
+      </div> 
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+{{ end }}

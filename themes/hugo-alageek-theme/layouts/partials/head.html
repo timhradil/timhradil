@@ -1,0 +1,44 @@
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="referrer" content="no-referrer" />
+  <meta
+    name="description"
+    content="{{ .Description | default .Site.Params.description }}"
+  />
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  {{ hugo.Generator }}
+
+  {{ if .Site.Params.flattr }}
+    <meta name="flattr:id" content="{{ .Site.Params.flattr }}" />
+  {{ end }}
+
+
+  <link rel="canonical" href="{{ .Params.canonical | default .Permalink }}" />
+
+  {{ if .Site.Params.faviconfile }}
+    <link rel="shortcut icon" href="{{ .Site.Params.faviconfile | absURL }}" />
+  {{ else }}
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" />
+  {{ end }}
+
+
+  <link
+    href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ .Site.Title }}"
+  />
+
+  {{ partial "head_extra" . }}
+</head>
