@@ -238,7 +238,7 @@ h6 {
   /* Hugo specific: consider using the 'highlight' shortcode */
   display: block;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   line-height: 1.5em;
   white-space: pre;
   word-break: break-all;
