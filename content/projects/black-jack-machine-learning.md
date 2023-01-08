@@ -1,6 +1,6 @@
 ---
 title: "Black Jack Machine Learning"
-date: 2022-08-22T20:30:41-06:00
+date: 2019-07-07T20:30:41-06:00
 draft: false 
 ---
 

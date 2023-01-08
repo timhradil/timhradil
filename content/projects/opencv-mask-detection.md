@@ -1,6 +1,6 @@
 ---
 title: "OpenCV Mask Detection"
-date: 2022-12-22T20:30:41-06:00
+date: 2021-12-22T20:30:41-06:00
 draft: false 
 ---
 

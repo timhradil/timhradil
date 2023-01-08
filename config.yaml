@@ -1,0 +1,55 @@
+baseURL: 'http://timhradil.com/'
+languageCode: en-us
+title: My New Hugo Site
+theme: hugo-alageek-theme
+Title: 'Hi, I''m Tim.'
+menu:
+  primary:
+    - identifier: resume
+      name: Resume
+      title: Resume
+      url: /resume/
+      weight: -130
+    - identifier: projects
+      name: Projects
+      title: projects section
+      url: /projects/
+      weight: -120
+    - identifier: blog
+      name: Blog
+      title: blog section
+      url: /blog/
+      weight: -110
+    - identifier: artwork
+      name: Artwork
+      title: artwork section
+      url: /artwork/
+      weight: -100
+params:
+  logofile: ./logo.png
+  email: timhradil@gmail.com
+  twiter: timhradil
+  github: timhradil
+  linkedin: timhradil
+  faviconfile: ./logo.ico
+  current_project: opencv-mask-detection
+  favorite_things: 
+    - name: Book
+      url: https://archive.org/stream/TheultimateHitchhikersGuide/The%20Hitchhiker%27s%20Guide%20To%20The%20Galaxy_djvu.txt
+      title: The Hitchiker's Guide to the Galaxy
+    - name: Movie 
+      url: https://www.imdb.com/title/tt0816692/
+      title: Interstellar
+    - name: Food
+      url: https://handletheheat.com/lemon-poppy-seed-muffins/
+      title: Lemon Poppy Seed Muffins
+    - name: Text Editor
+      url: https://www.vim.org/
+      title: Vim
+    - name: Language
+      url: https://www.python.org/
+      title: Python
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

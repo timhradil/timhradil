@@ -1,6 +1,6 @@
 ---
 title: "JSAT Iris Classifier"
-date: 2022-10-22T20:30:41-06:00
+date: 2020-10-29T20:30:41-06:00
 draft: false 
 ---
 

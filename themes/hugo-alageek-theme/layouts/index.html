@@ -6,42 +6,25 @@
           <div class="markdown">
             {{ partial "content" . }}
           </div>
-          {{ if isset .Site.Params "best_posts" }}
-            <div class="mx-0 mx-md-4 best-posts">
-              <div class="page-heading">📌 {{ i18n "pinned" }}</div>
-              <ul>
-                {{ range .Site.Params.best_posts }}
-                  <li>
-                    <a href="{{ .url }}">{{ .title }}</a>
-                  </li>
-                {{ end }}
-              </ul>
-            </div>
-          {{ end }}
-
-          {{ if isset .Site.Params "latestpostcount" }}
-            <div class="mx-0 mx-md-4 posts">
-              {{ $nbPosts := len (where .Site.RegularPages "Section" "blog") }}
-
-              {{ if gt $nbPosts 0 }}
-                <div class="page-heading">{{ i18n "latest_posts" }}</div>
-                <ul class="px-0">
-                  {{ range (first .Site.Params.latestpostcount (where .Site.RegularPages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
-                    <li class="groupby">{{ .Key }}</li>
-                    {{ range sort .Pages "Date" "desc" }}
-                      {{ partial "list" . }}
-                    {{ end }}
-                  {{ end }}
-                </ul>
-
-                {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                  <a href="./blog/" class="font-italic mt-4 see-more">
-                    {{ i18n "see_more" }}
-                  </a>
-                {{ end }}
+          <div class="mx-0 mx-md-4 favorite_things">
+            <div class="page-heading">My Favorite Things</div>
+            <ul>
+              {{ range .Site.Params.favorite_things }}
+                <li>
+                  {{ .name }} - <a href="{{ .url }}">{{ .title }}</a>
+                </li>
               {{ end }}
+            </ul>
+          </div>
+          <div class="mx-0 mx-md-4 current_project">
+            <div class="page-heading">What I'm Working on</div>
+            <div class="mx-3">
+            {{ range where .Site.RegularPages "Params.currentproject" "!=" nil }}
+              <div> <h5> {{ .Title }} </h5> </div>
+              <div> {{ partial "content" . }} </div>
+            {{ end }}
             </div>
-          {{ end }}
+          </div>
         </div>
       </div>
     </div>
