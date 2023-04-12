@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://timhradil.com/logo.png" width=150>  
-  
-  [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=Any%20sufficiently%20advanced%20technology%20is%20indistinguishable%20from%20magic.&author=Arthur%20C.%20Clarke)](https://github.com/piyushsuthar/github-readme-quotes)
-  
+  <img src="https://timhradil.com/logo.png" width=150>
+  <div>
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=Any%20sufficiently%20advanced%20technology%20is%20indistinguishable%20from%20magic.&author=Arthur%20C.%20Clarke">
+  </div>
   <div>
     <a href="https://linkedin.com/in/timhradil">
       <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge">
