@@ -20,8 +20,8 @@
 ### I'm a Senior studying Computer Science and Engineering at Santa Clara University. I am a former Amazon Software Development Engineer Intern and former Tech Lead of [humanID](https://human-id.org), a non-profit startup backed by Harvard Business School and Mozilla.
 
 <div>  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=timhradil&exclude_repo=College-Map,timhradil,collegeMentalHealthRankings&theme=dark&langs_count=3)](https://github.com/anuraghazra/github-readme-stats" height=250>
-  <img src="https://github-readme-stats.vercel.app/api?username=timhradil&theme=dark&count_private=true" height=250>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=timhradil&exclude_repo=College-Map,timhradil,collegeMentalHealthRankings&theme=dark&langs_count=3)](https://github.com/anuraghazra/github-readme-stats" height=200>
+  <img src="https://github-readme-stats.vercel.app/api?username=timhradil&theme=dark&count_private=true" height=200>
 </div>
 
 <div align="center">
