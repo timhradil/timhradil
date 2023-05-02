@@ -1,10 +1,15 @@
-baseURL: 'http://timhradil.com/'
+baseURL: 'https://timhradil.com/'
 languageCode: en-us
 title: My New Hugo Site
 theme: hugo-alageek-theme
 Title: 'Hi, I''m Tim.'
 menu:
   primary:
+    - identifier: chat
+      name: Chat With Me
+      title: Chat
+      url: https://chat.timhradil.com
+      weight: -140
     - identifier: resume
       name: Resume
       title: Resume
@@ -26,13 +31,13 @@ menu:
       url: /artwork/
       weight: -100
 params:
+  logoURL: 'https://timhradil.com/'
   logofile: ./logo.png
   email: timhradil@gmail.com
   twiter: timhradil
   github: timhradil
   linkedin: timhradil
   faviconfile: ./logo.ico
-  current_project: opencv-mask-detection
   favorite_things: 
     - name: Book
       url: https://archive.org/stream/TheultimateHitchhikersGuide/The%20Hitchhiker%27s%20Guide%20To%20The%20Galaxy_djvu.txt
