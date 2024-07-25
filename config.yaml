@@ -40,7 +40,7 @@ params:
   faviconfile: ./logo.ico
   favorite_things: 
     - name: Book
-      url: https://archive.org/stream/TheultimateHitchhikersGuide/The%20Hitchhiker%27s%20Guide%20To%20The%20Galaxy_djvu.txt
+      url: https://www.amazon.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/dp/0345391802
       title: The Hitchiker's Guide to the Galaxy
     - name: Movie 
       url: https://www.imdb.com/title/tt0816692/
